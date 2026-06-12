@@ -1,0 +1,164 @@
+
+@media screen and (min-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .products-grid,
+    .catalog-grid,
+    .gallery-grid,
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+        .nav-list a {
+            position: relative;
+            text-decoration: none;
+        }
+    
+        .nav-list a::after {
+            content: "";
+    
+            position: absolute;
+    
+            left: 0;
+            bottom: -6px;
+    
+            width: 0;
+            height: 3px;
+    
+            background-color: var(--var4);
+    
+            transition: width .3s ease;
+        }
+    
+        .nav-list a:hover::after {
+            width: 100%;
+        }
+        .about-highlights {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .category-section {
+            width: 100%;
+            padding: 0 8rem;
+        }
+        .product-card {
+        flex: 0 0 calc(50% - .75rem);
+        }
+        .category-header h3 {
+            font-size: 1.5rem;
+        }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+
+    section {
+        padding: 6rem 2rem;
+    }
+
+    .header {
+        padding: 1.5rem 3rem;
+    }
+
+    .menu-btn,
+    .close-btn {
+        display: none;
+    }
+
+    .navbar {
+            position: static;
+            width: auto;
+            height: auto;
+            padding: 0;
+            background: transparent;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 150px;
+            flex: 1;
+        }
+
+        .nav-list {
+            margin: 0;
+    
+            display: flex;
+            flex-direction: row;
+    
+            align-items: center;
+            justify-content: center;
+    
+            gap: 2rem;
+    
+            flex: 1;
+        }
+        .contact-btn {
+            background: var(--var4);
+    
+            color: white;
+    
+            text-decoration: none;
+    
+            padding: .1rem 1.6rem;
+    
+            border-radius: 40px;
+    
+            font-weight: bold;
+    
+            transition: .3s;
+    
+            margin-left: auto;
+        }
+    
+        .contact-btn:hover {
+            background: var(--var2);
+    
+            transform: translateY(-3px);
+        }
+
+    .hero-content h1 {
+        font-size: 5rem;
+    }
+
+    .products-grid,
+    .catalog-grid,
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonials-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-content,
+    .contact-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .category-section {
+        width: 100%;
+        padding: 0 12rem;
+    }
+    .product-card {
+        flex: 0 0 calc(33.333% - .75rem);
+    }
+}
+
+

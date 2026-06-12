@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="William Benjamin Francia Poma">
+    <meta name="description"
+        content="Custom cakes, desserts, cupcakes and bakery creations for weddings, birthdays, anniversaries and special events.">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <script type="module" src="js/main.js"></script>
+
+    <title>Sweet Delights Bakery</title>
+
+</head>
+
+<body>
+
+    
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo-container">
+            <a href="#home">
+                <img src="images/logo/logo2.jpg" alt="Sweet Delights Bakery Logo" class="logo">
+            </a>
+        </div>
+
+        <button id="menuBtn" class="menu-btn" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav id="navbar" class="navbar">
+
+            <button id="closeBtn" class="close-btn" aria-label="Close navigation menu">
+                ✕
+            </button>
+
+            <ul class="nav-list">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#products">Products</a></li>
+
+                <li><a href="#catalog">Catalog</a></li>
+                
+                <li><a href="#gallery">Gallery</a></li>
+                
+                <li><a href="#about">About Us</a></li>
+
+                <li><a href="#testimonials">Testimonials</a></li>
+
+
+            </ul>
+            <a href="#contact" class="contact-btn">
+                Contact Us
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+            <!-- HERO -->
+            <section id="home" class="hero-section">
+            
+                <div class="hero-overlay"></div>
+            
+                <div class="hero-content">
+            
+                    <span class="hero-tagline">
+                        Handcrafted with love
+                    </span>
+            
+                    <h1>
+                        Sweet Creations For Your Celebration
+                    </h1>
+            
+                    <p>
+                        Beautiful custom cakes, cupcakes and desserts
+                        designed to make your most important moments
+                        unforgettable.
+                    </p>
+            
+                    <div class="hero-buttons">
+            
+                        <a href="#catalog" class="btn-primary">
+                            View Catalog
+                        </a>
+            
+                        <a href="#contact" class="btn-secondary">
+                            Contact Us
+                        </a>
+            
+                    </div>
+            
+                </div>
+            
+            </section>
+
+        
+
+
+
+        <!-- FEATURED PRODUCTS -->
+        <section id="products" class="featured-products">
+
+            <div class="section-heading">
+
+                <span>Featured Products</span>
+
+                <h2>
+                    Customer Favorites
+                </h2>
+
+                <p>
+                    Discover some of our most requested creations.
+                </p>
+
+            </div>
+
+            <div id="featuredProductsContainer" class="products-grid">
+
+                <!-- JavaScript inserts products -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CATALOG -->
+        <section id="catalog" class="catalog-section">
+
+            <div class="section-heading">
+
+                <span>Explore</span>
+
+                <h2>
+                    Our Catalog
+                </h2>
+
+            </div>
+
+            <div class="catalog-controls">
+
+                <input type="search" id="searchInput" placeholder="Search products...">
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="birthday">
+                        Birthday Cakes
+                    </option>
+
+                    <option value="wedding">
+                        Wedding Cakes
+                    </option>
+
+                    <option value="cupcakes">
+                        Cupcakes
+                    </option>
+
+                    <option value="desserts">
+                        Desserts
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div id="catalogContainer" class="catalog-grid">
+
+                <!-- JavaScript inserts products -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- GALLERY -->
+
+        <section id="gallery" class="gallery-section">
+
+            <div class="section-heading">
+
+                <span>Gallery</span>
+
+                <h2>
+                    Sweet Inspiration
+                </h2>
+
+            </div>
+
+            <div id="galleryContainer" class="gallery-grid">
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ABOUT US -->
+
+        <section id="about" class="about-section">
+
+            <div class="about-content">
+
+                <div class="about-image">
+
+                    <img src="images/gallery/myfamily.webp" alt="Family bakery team">
+
+                </div>
+
+                <div class="about-text">
+
+                    <span>Our Story</span>
+
+                    <h2>
+                        Baking Memories Since Day One
+                    </h2>
+
+                    <p class="lead">
+                        Hola, soy <strong>Melany Francia Poma</strong>. Nuestra historia nace de un gusto profundo por lo dulce
+                        y la repostería: desde pequeños preparábamos estos riquísimos postres para la familia. Con el tiempo ese
+                        cariño por crear postres nos llevó a convertir una pasión en oficio.
+                    </p>
+                    
+                    <p>
+                        Tras casarnos, mi esposo <strong>Freddy</strong> y yo abrimos una panadería en nuestro barrio. Al
+                        principio fue un proyecto pequeño, con mucha ilusión y el apoyo de los vecinos. Las ventas fueron
+                        creciendo y, para mejorar, tomamos clases especializadas para preparar tortas y pastelería fina.
+                    </p>
+                    
+                    <p>
+                        Cada año fuimos puliendo nuestras recetas y técnicas. Después de tener a nuestras hijas, empezamos a
+                        participar en cumpleaños y eventos pequeños, y poco a poco nos forjamos una reputación por el sabor y la
+                        dedicación. A inicios de 2024 dimos un gran paso: comenzamos a atender eventos grandes como aniversarios
+                        y bodas.
+                    </p>
+                    
+                    <p>
+                        Nos quedamos en esto porque descubrimos algo valioso: cada familia necesita confiar en quienes están
+                        detrás de sus momentos más importantes. No solo nos agradecían por el sabor —que cuidamos con cariño—,
+                        sino sobre todo por la responsabilidad, el compromiso y la calma que damos en días tan importantes.
+                    </p>
+                    
+                    <p class="highlight">
+                        Ahora queremos ser parte de tu vida. Nos encargamos de que cada detalle dulce llegue puntual, lindo y
+                        delicioso. Te aseguramos que no te arrepentirás.
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="about-highlights">
+            
+                <div class="highlight-card">
+                    <h3>Custom Creations</h3>
+                    <p>
+                        Personalized cakes and desserts designed for weddings,
+                        birthdays, anniversaries and special celebrations.
+                    </p>
+                </div>
+            
+                <div class="highlight-card">
+                    <h3>Premium Ingredients</h3>
+                    <p>
+                        Fresh ingredients and handcrafted recipes carefully
+                        prepared to guarantee exceptional flavor and quality.
+                    </p>
+                </div>
+            
+                <div class="highlight-card">
+                    <h3>Reliable Service</h3>
+                    <p>
+                        Commitment, punctuality and attention to detail for
+                        every order and every event.
+                    </p>
+                </div>
+            
+            </div>
+
+        </section>
+
+
+
+        <!-- TESTIMONIALS -->
+
+        <section id="testimonials" class="testimonials-section">
+
+            <div class="section-heading">
+
+                <span>Testimonials</span>
+
+                <h2>
+                    What Our Clients Say
+                </h2>
+
+            </div>
+
+            <div class="testimonials-container">
+
+                <article class="testimonial-card">
+
+                    <h3>Maria G.</h3>
+
+                    <p>
+                        The cake exceeded our expectations.
+                        Beautiful presentation and incredible flavor.
+                    </p>
+
+                </article>
+
+                <article class="testimonial-card">
+
+                    <h3>Rodrigo T.</h3>
+
+                    <p>
+                        Excellent service from start to finish.
+                        Everything arrived perfectly.
+                    </p>
+
+                </article>
+
+                <article class="testimonial-card">
+
+                    <h3>Family Calderon</h3>
+
+                    <p>
+                        Professional, reliable and delicious.
+                        Highly recommended.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CONTACT -->
+
+        <section id="contact" class="contact-section">
+
+            <div class="section-heading">
+
+                <span>Contact</span>
+
+                <h2>
+                    Let's Create Something Sweet Together
+                </h2>
+
+            </div>
+
+            <div class="contact-content">
+
+                <div class="contact-info">
+
+                    <h3>Contact Information</h3>
+
+                    <p>Phone: +591 XXX XXX XXX</p>
+
+                    <p>Email: bakery@email.com</p>
+
+                    <p>La Paz, Bolivia</p>
+
+                </div>
+
+                <div class="contact-actions">
+
+                    <a class="facebook" href="https://www.facebook.com/?locale=es_LA">
+                        <img src="images/gallery/app_facebook_logo.png" alt="facebook" width="35" height="35">
+                    </a>
+            
+                    <a class="whatsapp" href="https://www.whatsapp.com/?lang=es_LA">
+                        <img src="images/gallery/whatsapp.png" alt="whatsapp" width="35" height="35">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- PRODUCT MODAL -->
+
+    <dialog id="productModal">
+
+        <button id="closeModal" aria-label="Close modal">
+
+            ✕
+
+        </button>
+
+        <div id="modalContent">
+
+            <!-- Dynamic product information -->
+
+        </div>
+
+    </dialog>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <img src="images/logo/logo1.png" alt="Sweet Delights Bakery Logo">
+
+        </div>
+        <div class="contact-actions">
+        
+            <a class="facebook" href="https://www.facebook.com/?locale=es_LA">
+                <img src="images/gallery/app_facebook_logo.png" alt="facebook" width="35" height="35">
+            </a>
+        
+            <a class="whatsapp" href="https://www.whatsapp.com/?lang=es_LA">
+                <img src="images/gallery/whatsapp.png" alt="whatsapp" width="35" height="35">
+            </a>
+        
+        </div>
+        <br>
+
+        <p>
+            Creating sweet memories one cake at a time.
+        </p>
+        <div class="footer-links">
+        
+            <a href="#home">Home</a>
+            <a href="#catalog">Catalog</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        
+        </div>
+        <p>
+            © 2026 Sweet Delights Bakery.
+            All Rights Reserved.
+        </p>
+        
+
+    </footer>
+
+</body>
+
+</html>

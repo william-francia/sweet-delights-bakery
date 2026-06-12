@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "name": "Torta Clásica",
+    "price": 120,
+    "category": "Tortas",
+    "image": "images/products/cake2.webp",
+    "description": "Torta tradicional de sabor casero, ideal para celebraciones familiares."
+  },
+  {
+    "id": 2,
+    "name": "Torta de Chocolate",
+    "price": 180,
+    "category": "Tortas",
+    "image": "images/products/cake2.webp",
+    "description": "Torta elaborada con chocolate, de sabor intenso y textura suave."
+  },
+  {
+    "id": 3,
+    "name": "Torta Personalizada",
+    "price": 150,
+    "category": "Tortas",
+    "image": "images/products/cake2.webp",
+    "description": "Torta decorada según la temática o preferencia del cliente."
+  },
+  {
+    "id": 4,
+    "name": "Torta Tres Leches",
+    "price": 180,
+    "category": "Tortas",
+    "image": "images/products/cake1.webp",
+    "description": "Bizcocho húmedo bañado en una mezcla de tres leches."
+  },
+  {
+    "id": 5,
+    "name": "Alfajor de Crema Pastelera",
+    "price": 6,
+    "category": "Alfajores",
+    "image": "images/products/cake1.webp",
+    "description": "Galletas rellenas con suave crema pastelera."
+  },
+  {
+    "id": 6,
+    "name": "Alfajor de Chocolate",
+    "price": 6,
+    "category": "Alfajores",
+    "image": "images/products/cake1.webp",
+    "description": "Alfajor relleno y cubierto con chocolate."
+  },
+  {
+    "id": 7,
+    "name": "Alfajor de Maicena",
+    "price": 6,
+    "category": "Alfajores",
+    "image": "images/products/cake1.webp",
+    "description": "Alfajor tradicional de maicena con relleno dulce."
+  },
+  {
+    "id": 8,
+    "name": "Alfajor de Hoja",
+    "price": 6,
+    "category": "Alfajores",
+    "image": "images/products/cake1.webp",
+    "description": "Alfajor elaborado con capas de masa hojaldrada."
+  },
+  {
+    "id": 9,
+    "name": "Docena Surtida de Alfajores",
+    "price": 70,
+    "category": "Alfajores",
+    "image": "images/products/cake1.webp",
+    "description": "Selección variada de alfajores de diferentes sabores."
+  },
+  {
+    "id": 10,
+    "name": "Tartaleta de Gelatina",
+    "price": 5,
+    "category": "Tartaletas",
+    "image": "images/products/cake1.webp",
+    "description": "Base de masa rellena y cubierta con gelatina."
+  },
+  {
+    "id": 11,
+    "name": "Tartaleta de Crema de Limón",
+    "price": 6,
+    "category": "Tartaletas",
+    "image": "images/products/cake1.webp",
+    "description": "Tartaleta con relleno cremoso de limón."
+  },
+  {
+    "id": 12,
+    "name": "Tartaleta de Manzana",
+    "price": 5,
+    "category": "Tartaletas",
+    "image": "images/products/cake1.webp",
+    "description": "Tartaleta rellena con manzana dulce."
+  },
+  {
+    "id": 13,
+    "name": "Tartaleta de Maracuyá",
+    "price": 6,
+    "category": "Tartaletas",
+    "image": "images/products/cake1.webp",
+    "description": "Tartaleta con relleno de maracuyá de sabor tropical."
+  },
+  {
+    "id": 14,
+    "name": "Empanada de Queso",
+    "price": 3.5,
+    "category": "Empanadas",
+    "image": "images/products/cake1.webp",
+    "description": "Empanada horneada rellena de queso."
+  },
+  {
+    "id": 15,
+    "name": "Empanada de Jamón con Queso",
+    "price": 5,
+    "category": "Empanadas",
+    "image": "images/products/cake1.webp",
+    "description": "Empanada rellena con jamón y queso."
+  },
+  {
+    "id": 16,
+    "name": "Empanada de Manzana",
+    "price": 3.5,
+    "category": "Empanadas",
+    "image": "images/products/cake1.webp",
+    "description": "Empanada dulce rellena de manzana."
+  },
+  {
+    "id": 17,
+    "name": "Empanada de Pollo",
+    "price": 5,
+    "category": "Empanadas",
+    "image": "images/products/cake1.webp",
+    "description": "Empanada salada rellena de pollo sazonado."
+  },
+  {
+    "id": 18,
+    "name": "Queque de Plátano",
+    "price": 18,
+    "category": "Queques",
+    "image": "images/products/cake1.webp",
+    "description": "Bizcocho suave elaborado con plátano."
+  },
+  {
+    "id": 19,
+    "name": "Queque Marmolado",
+    "price": 18,
+    "category": "Queques",
+    "image": "images/products/cake1.webp",
+    "description": "Queque combinado de vainilla y chocolate."
+  },
+  {
+    "id": 20,
+    "name": "Queque de Zanahoria",
+    "price": 18,
+    "category": "Queques",
+    "image": "images/products/cake1.webp",
+    "description": "Queque húmedo preparado con zanahoria."
+  },
+  {
+    "id": 21,
+    "name": "Queque de Naranja",
+    "price": 18,
+    "category": "Queques",
+    "image": "images/products/cake1.webp",
+    "description": "Queque aromático con sabor natural a naranja."
+  },
+  {
+    "id": 22,
+    "name": "Porción Individual de Queque",
+    "price": 4.5,
+    "category": "Queques",
+    "image": "images/products/cake1.webp",
+    "description": "Porción individual de cualquiera de los sabores disponibles."
+  },
+  {
+    "id": 23,
+    "name": "Cono de Crema Pastelera",
+    "price": 4,
+    "category": "Otras Variedades",
+    "image": "images/products/cake1.webp",
+    "description": "Masa rellena con crema pastelera dulce."
+  },
+  {
+    "id": 24,
+    "name": "Cheesecake de Maracuyá",
+    "price": 6,
+    "category": "Otras Variedades",
+    "image": "images/products/cake1.webp",
+    "description": "Postre cremoso de queso con sabor a maracuyá."
+  },
+  {
+    "id": 25,
+    "name": "Eclair",
+    "price": 6,
+    "category": "Otras Variedades",
+    "image": "images/products/cake1.webp",
+    "description": "Pasta rellena de crema y decorada con cobertura."
+  },
+  {
+    "id": 26,
+    "name": "Brazo Gitano (Porción Individual)",
+    "price": 5,
+    "category": "Otras Variedades",
+    "image": "images/products/cake1.webp",
+    "description": "Rebanada individual de brazo gitano relleno."
+  },
+  {
+    "id": 27,
+    "name": "Brazo Gitano Entero",
+    "price": 70,
+    "category": "Otras Variedades",
+    "image": "images/products/cake1.webp",
+    "description": "Brazo gitano completo para compartir."
+  },
+  {
+    "id": 28,
+    "name": "Brazo Gitano Entero con Cobertura de Crema",
+    "price": 90,
+    "category": "Otras Variedades",
+    "image": "images/products/cake1.webp",
+    "description": "Brazo gitano completo decorado con cobertura de crema."
+  }
+]

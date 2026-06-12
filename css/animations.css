@@ -1,0 +1,74 @@
+/* FADE IN */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* SLIDE UP */
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FLOAT */
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* HERO */
+
+.hero-content {
+    animation: fadeIn 1.2s ease;
+}
+
+.hero-tagline,
+.hero-content h1,
+.hero-content p,
+.hero-buttons {
+    animation: slideUp 1s ease;
+}
+
+/* HOVER CARDS */
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    transition: .3s ease;
+}
+
+/* BUTTONS */
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+}
+
+/* LOGO */
+
+.logo {
+    animation: floating 4s ease-in-out infinite;
+}
