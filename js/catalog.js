@@ -1,4 +1,10 @@
 let products = [];
+import {
+    toggleFavorite,
+    isFavorite,
+    getFavoriteProducts
+}
+from "./favorites.js";
 
 export function setProducts(data) {
     products = data;
@@ -21,23 +27,41 @@ export function renderFeaturedProducts() {
         .join("");
 }
 
-export function renderCatalog() {
+export function renderCatalog(searchTerm = "") {
 
     const container =
         document.querySelector("#catalogContainer");
 
     if (!container) return;
 
-    const categories =
-        [...new Set(products.map(
+    const filteredProducts =
+    products.filter(product =>
+        product.name
+            .toLowerCase()
+            .includes(
+                searchTerm.toLowerCase()
+            )
+    );
+
+const categories =
+    [...new Set(
+        filteredProducts.map(
             product => product.category
-        ))];
+        )
+    )];
 
     container.innerHTML = categories
-        .map(createCategorySection)
+        .map(category =>
+    createCategorySection(
+        category,
+        filteredProducts
+    )
+)
         .join("");
 
     initializeCarousels();
+    initializeFavorites();
+    renderFavorites();
 }
 
 function createCard(product) {
@@ -61,23 +85,40 @@ function createCard(product) {
                     Bs ${product.price}
                 </span>
 
-                <button
-                    class="view-product-btn"
-                    data-id="${product.id}">
-                    View Details
-                </button>
+                <div class="product-actions">
+
+    <button
+    class="favorite-btn
+    ${isFavorite(product.id)
+        ? "active"
+        : ""}"
+    data-id="${product.id}">
+    🤍
+</button>
+    
+
+    <button
+        class="view-product-btn"
+        data-id="${product.id}">
+        View Details
+    </button>
+
+</div>
 
             </div>
 
         </article>
     `;
 }
-function createCategorySection(category) {
+function createCategorySection(
+    category,
+    filteredProducts
+) {
 
     const categoryProducts =
-        products.filter(
-            product => product.category === category
-        );
+    filteredProducts.filter(
+        product => product.category === category
+    );
 
     return `
 
@@ -193,4 +234,72 @@ function initializeCarousels() {
                 }px)`;
         }
     });
+}
+function initializeFavorites() {
+
+    const buttons =
+        document.querySelectorAll(
+            ".favorite-btn"
+        );
+
+    buttons.forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                const productId =
+                    Number(
+                        button.dataset.id
+                    );
+
+                toggleFavorite(productId);
+
+                button.classList.toggle(
+                    "active"
+                );
+                renderFavorites();
+            }
+        );
+    });
+}
+export function renderFavorites() {
+
+    const section =
+        document.querySelector(
+            "#favorites"
+        );
+
+    const container =
+        document.querySelector(
+            "#favoritesContainer"
+        );
+
+    if (
+        !section ||
+        !container
+    ) return;
+
+    const favoriteProducts =
+        getFavoriteProducts(
+            products
+        );
+
+    if (
+        favoriteProducts.length === 0
+    ) {
+
+        section.style.display =
+            "none";
+
+        return;
+    }
+
+    section.style.display =
+        "block";
+
+    container.innerHTML =
+        favoriteProducts
+            .map(createCard)
+            .join("");
 }

@@ -16,5 +16,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderFeaturedProducts();
 
     renderCatalog();
+    
+    const searchInput =
+    document.querySelector(
+        "#searchInput"
+    );
+
+searchInput.addEventListener(
+    "input",
+    event => {
+
+        renderCatalog(
+            event.target.value
+        );
+
+    }
+);
 
 });

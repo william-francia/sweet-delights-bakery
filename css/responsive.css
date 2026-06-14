@@ -63,6 +63,10 @@
         .category-header h3 {
             font-size: 1.5rem;
         }
+        .favorites-section {
+        margin-top: 2rem;
+        padding: 0 8rem;
+        }
 }
 
 /* DESKTOP */
@@ -158,6 +162,10 @@
     }
     .product-card {
         flex: 0 0 calc(33.333% - .75rem);
+    }
+    .favorites-section {
+    margin-top: 2rem;
+    padding: 0 12rem;
     }
 }
 

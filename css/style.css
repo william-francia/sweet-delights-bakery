@@ -388,16 +388,6 @@ footer a, p {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* ===================================
    CATALOG CAROUSEL
 =================================== */
@@ -405,7 +395,7 @@ footer a, p {
 .catalog-grid {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2.5rem;
 }
 
 .category-section {
@@ -417,7 +407,7 @@ footer a, p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .category-header h3 {
@@ -541,4 +531,69 @@ footer a, p {
 
 .view-product-btn:hover {
     background: var(--var3);
+}
+
+.catalog-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--var8);
+    border-radius: 50px;
+    outline: none;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+#searchInput:focus {
+    border-color: var(--var4);
+    box-shadow:
+        0 0 15px rgba(201,
+            24,
+            74,
+            0.25);
+}
+
+.product-actions {
+    display: flex;
+    gap: .75rem;
+    margin-top: 1rem;
+}
+
+.favorite-btn {
+    width: 90px;
+    height: 50px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+
+    background: var(--var6);
+    color: var(--var3);
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.08);
+
+    background: var(--var5);
+    color: white;
+}
+.favorite-btn.active {
+
+    background: var(--var4);
+
+    color: white;
+}
+.favorites-section {
+    margin-top: 2rem;
+    padding: 0 10rem;
 }
