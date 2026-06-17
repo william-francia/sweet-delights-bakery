@@ -311,6 +311,7 @@ section {
 }
 #testimonials {
     padding: 1rem;
+    padding-bottom: 2rem;
     background: var(--var1)
 }
 
