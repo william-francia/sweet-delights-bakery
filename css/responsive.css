@@ -81,9 +81,21 @@
         height: 220px;
         }
 
-
+        .products-grid {
+        padding: 0 10rem;
+        }
+        .highlight-card {
+        padding: 1.5rem 3rem;
+        }
+        .about-highlights {
+        padding: 0 6rem;
+        }
+        #testimonials {
+        padding: 3rem 6rem;
+        }
 
 }
+
 
 /* DESKTOP */
 
@@ -185,6 +197,15 @@
     }
     .gallery-grid {
     padding: 0 12rem;
+    }
+    .products-grid {
+    padding: 0 13rem;
+    }
+    .about-highlights {
+    padding: 0 13rem;
+    }
+    #testimonials {
+    padding: 5rem 12rem;
     }
 }
 
