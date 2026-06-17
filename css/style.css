@@ -65,7 +65,8 @@ h3,
 h4 {
     font-family: var(--font-heading);
     color: var(--var2);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    
 }
 
 /* GLOBAL SECTIONS */
@@ -243,6 +244,7 @@ section {
     gap: 1.5rem;
     
 }
+
 
 .products-grid {
     padding: 0 1rem;

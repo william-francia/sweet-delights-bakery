@@ -61,3 +61,32 @@ closeModal.addEventListener(
 );
 
 });
+const menuBtn =
+    document.querySelector("#menuBtn");
+
+const closeBtn =
+    document.querySelector("#closeBtn");
+
+const navbar =
+    document.querySelector("#navbar");
+
+menuBtn.addEventListener(
+    "click",
+    () => navbar.classList.add("active")
+);
+
+closeBtn.addEventListener(
+    "click",
+    () => navbar.classList.remove("active")
+);
+
+document
+    .querySelectorAll(".nav-list a")
+    .forEach(link => {
+
+        link.addEventListener(
+            "click",
+            () => navbar.classList.remove("active")
+        );
+
+    });
