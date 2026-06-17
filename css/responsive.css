@@ -67,6 +67,22 @@
         margin-top: 2rem;
         padding: 0 8rem;
         }
+        .gallery-grid {
+        padding: 0 8rem;
+        }
+         
+
+        #productModal {
+        max-width: 600px;
+        padding: 5px 20px;
+        }
+
+        #modalContent img {
+        height: 220px;
+        }
+
+
+
 }
 
 /* DESKTOP */
@@ -165,6 +181,9 @@
     }
     .favorites-section {
     margin-top: 2rem;
+    padding: 0 12rem;
+    }
+    .gallery-grid {
     padding: 0 12rem;
     }
 }

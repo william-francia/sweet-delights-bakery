@@ -1,4 +1,31 @@
 let products = [];
+export function initializeModal() {
+
+    document.addEventListener(
+        "click",
+        event => {
+
+            const button =
+                event.target.closest(
+                    ".view-product-btn"
+                );
+
+            if (!button) return;
+
+            const productId =
+                Number(
+                    button.dataset.id
+                );
+
+            const product =
+                products.find(
+                    p => p.id === productId
+                );
+
+            openModal(product);
+        }
+    );
+}
 import {
     toggleFavorite,
     isFavorite,
@@ -302,4 +329,45 @@ export function renderFavorites() {
         favoriteProducts
             .map(createCard)
             .join("");
+}
+function openModal(product) {
+
+    const modal =
+        document.querySelector(
+            "#productModal"
+        );
+
+    const content =
+        document.querySelector(
+            "#modalContent"
+        );
+
+    content.innerHTML = `
+
+        <img
+            src="${product.image}"
+            alt="${product.name}"
+            class="modal-image"
+        >
+
+        <h2>
+            ${product.name}
+        </h2>
+
+        <p>
+            ${product.description}
+        </p>
+
+        <h3>
+            Bs ${product.price}
+        </h3>
+
+        <p>
+            Category:
+            ${product.category}
+        </p>
+
+    `;
+
+    modal.showModal();
 }

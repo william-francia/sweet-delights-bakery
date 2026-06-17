@@ -3,8 +3,16 @@ import { fetchProducts } from "./dataService.js";
 import {
     setProducts,
     renderFeaturedProducts,
-    renderCatalog
-} from "./catalog.js";
+    renderCatalog,
+    initializeModal
+} 
+
+from "./catalog.js";
+import { loadGallery }
+from "./gallery.js";
+import { loadRecipe }
+from "./recipe.js";
+
 
 document.addEventListener("DOMContentLoaded", async () => {
 
@@ -16,19 +24,38 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderFeaturedProducts();
 
     renderCatalog();
+    initializeModal();
+    await loadGallery();
+    await loadRecipe();
     
     const searchInput =
     document.querySelector(
         "#searchInput"
+    
+    );
+    const modal =
+    document.querySelector(
+        "#productModal"
     );
 
-searchInput.addEventListener(
+const closeModal =
+    document.querySelector(
+        "#closeModal"
+    );
+
+closeModal.addEventListener(
+    "click",
+    () => modal.close()
+);
+
+    searchInput.addEventListener(
     "input",
     event => {
 
         renderCatalog(
             event.target.value
         );
+    
 
     }
 );
