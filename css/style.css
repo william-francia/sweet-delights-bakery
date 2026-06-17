@@ -128,7 +128,9 @@ section {
 }
 
 /* MOBILE NAV */
-
+.mobile-logo {
+    display: none;
+}
 .navbar {
     position: fixed;
     top: 0;
