@@ -81,7 +81,7 @@ closeBtn.addEventListener(
 );
 
 document
-    .querySelectorAll(".nav-list a")
+    .querySelectorAll(".nav-list a, .contact-btn")
     .forEach(link => {
 
         link.addEventListener(

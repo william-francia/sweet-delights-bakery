@@ -113,7 +113,7 @@ section {
 .logo {
     position: absolute;
     top: 1px;
-    width: 125px;
+    width: 100px;
     height: auto;
     animation: floatLogo 4s ease-in-out infinite;
 }
@@ -122,7 +122,7 @@ section {
 .close-btn {
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--var2);
     cursor: pointer;
 }
@@ -156,6 +156,7 @@ section {
 .nav-list a {
     font-weight: bold;
     color: var(--var2);
+    font-size: .80rem;
 }
 
 /* HERO */
