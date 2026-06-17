@@ -194,8 +194,13 @@
 @media screen and (max-width: 767px) {
 
     .hero-section {
+
         background-image:
+            linear-gradient(rgba(0, 0, 0, .45),
+                rgba(0, 0, 0, .45)),
             url("../images/hero/imghero1.webp");
+
     }
 
 }
+
