@@ -123,6 +123,7 @@ section {
     font-size: .8rem;
 
     z-index: 1000;
+
     transition: transform .4s ease;
 }
 
@@ -949,8 +950,8 @@ footer a, p {
 
     align-items: center;
 
-    gap: 1.4rem;
-    padding: 0 1rem;
+    gap: 1rem;
+    padding-right: 0.8rem;
 }
 
 .mobile-social img {
@@ -962,4 +963,8 @@ footer a, p {
 .mobile-social {
 
     display: none;
+}
+body {
+
+    overflow-x: hidden;
 }
