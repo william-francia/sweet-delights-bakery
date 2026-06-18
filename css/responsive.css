@@ -351,7 +351,61 @@
 
 }
 
+.contact-container {
 
+    grid-template-columns: 1fr;
+}
+
+.contact-card {
+
+    padding: 1.5rem;
+}
+
+.contact-buttons {
+
+    flex-direction: column;
+}
+
+.whatsapp-btn,
+.email-btn {
+
+    text-align: center;
+}
+
+.map-container iframe {
+
+    width: 100%;
+
+    height: 220px;
+}
+.mobile-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .75rem;
+}
+
+.mobile-social {
+
+    display: flex;
+
+    gap: 1rem;
+    padding-right: 10px;
+}
+
+.mobile-social img {
+
+    width: 28px;
+
+    height: 28px;
+}
+
+.menu-btn {
+
+    font-size: 1.8rem;
+}
 
 
 }

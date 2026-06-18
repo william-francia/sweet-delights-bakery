@@ -95,7 +95,7 @@ section {
     margin: 0 auto;
 }
 
-/*
+
 
 .top-bar {
 
@@ -104,7 +104,7 @@ section {
     top: 0;
     left: 0;
 
-    width: 90%;
+    width: 100%;
 
     height: 35px;
 
@@ -133,12 +133,12 @@ section {
 
     text-decoration: none;
 }
-*/
+
 
 .header {
     position: fixed;
     transition: top .4s ease;
-    top: 0px;
+    top: 35px;
     width: 100%;
     z-index: 999;
     padding: .9rem 2rem;
@@ -173,6 +173,11 @@ body {
 
 /* MOBILE NAV */
 .mobile-logo {
+    display: none;
+}
+.mobile-actions,
+.mobile-social {
+
     display: none;
 }
 .navbar {
@@ -861,6 +866,13 @@ footer a, p {
     gap: 2rem;
 
     margin-top: 2rem;
+    width: 100%;
+
+    max-width: 100%;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
 }
 
 .contact-card {
@@ -930,3 +942,4 @@ footer a, p {
 #divcontact-action {
     padding: 2rem 0;
 }
+
