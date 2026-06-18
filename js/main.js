@@ -91,3 +91,38 @@ document
         );
 
     });
+
+const topBar =
+    document.querySelector(
+        ".top-bar"
+    );
+
+const header =
+    document.querySelector(
+        ".header"
+    );
+
+window.addEventListener(
+    "scroll",
+    () => {
+
+        if (window.scrollY > 50) {
+
+            topBar.style.transform =
+                "translateY(-35px)";
+
+            header.style.top = "0";
+
+        }
+
+        else {
+
+            topBar.style.transform =
+                "translateY(0)";
+
+            header.style.top = "35px";
+
+        }
+
+    }
+);
