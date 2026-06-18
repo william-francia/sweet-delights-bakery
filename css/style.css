@@ -95,8 +95,8 @@ section {
     margin: 0 auto;
 }
 
+/*
 
-/* HEADER */
 .top-bar {
 
     position: fixed;
@@ -104,7 +104,7 @@ section {
     top: 0;
     left: 0;
 
-    width: 100%;
+    width: 90%;
 
     height: 35px;
 
@@ -124,6 +124,7 @@ section {
 
     z-index: 1000;
     transition: transform .4s ease;
+
 }
 
 .top-bar a {
@@ -132,12 +133,12 @@ section {
 
     text-decoration: none;
 }
-
+*/
 
 .header {
     position: fixed;
     transition: top .4s ease;
-    top: 35px;
+    top: 0px;
     width: 100%;
     z-index: 999;
     padding: .9rem 2rem;
@@ -147,12 +148,7 @@ section {
     justify-content: space-between;
     align-items: center;
 }
-.top-bar {
 
-    transition:
-        transform .4s ease;
-
-}
 .logo {
     position: absolute;
     top: 1px;
