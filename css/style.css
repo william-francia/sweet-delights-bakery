@@ -934,3 +934,32 @@ footer a, p {
 #divcontact-action {
     padding: 2rem 0;
 }
+.mobile-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .8rem;
+}
+
+.mobile-social {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1.4rem;
+    padding: 0 1rem;
+}
+
+.mobile-social img {
+
+    width: 28px;
+
+    height: 28px;
+}
+.mobile-social {
+
+    display: none;
+}
